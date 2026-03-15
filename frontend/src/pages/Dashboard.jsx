@@ -8,7 +8,7 @@ function Dashboard(){
 
   const fetchAuctions = () => {
 
-    fetch("http://localhost:5000/auction/active")
+    fetch("http://mini-auction-assessment.onrender.com/auction/active")
       .then(res => res.json())
       .then(data => setAuctions(data.auctions));
 
