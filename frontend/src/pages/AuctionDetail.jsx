@@ -9,7 +9,7 @@ function AuctionDetail({ user }) {
 
   const fetchAuction = () => {
 
-    fetch(`http://localhost:5000/auction/${id}`)
+    fetch(`http://mini-auction-assessment.onrender.com/auction/${id}`)
       .then(res => res.json())
       .then(data => setAuction(data));
 
@@ -27,7 +27,7 @@ function AuctionDetail({ user }) {
 
   const placeBid = async () => {
 
-    const response = await fetch("http://localhost:5000/bid/place",{
+    const response = await fetch("http://mini-auction-assessment.onrender.com/bid/place",{
 
       method:"POST",
 
