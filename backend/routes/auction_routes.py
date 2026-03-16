@@ -19,7 +19,7 @@ def create_auction():
     currency = data["currency"]
     duration = data["duration"]
 
-    start_time = datetime.datetime.now()
+    start_time = datetime.datetime.utcnow()
     end_time = start_time + datetime.timedelta(minutes=duration)
 
     conn = get_connection()
