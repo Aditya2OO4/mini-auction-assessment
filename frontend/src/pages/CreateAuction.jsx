@@ -18,7 +18,7 @@ function CreateAuction(){
 
     setLoading(true);
 
-    const response = await fetch("http://mini-auction-assessment.onrender.com/auction/create",{
+    const response = await fetch("https://mini-auction-assessment.onrender.com/auction/create",{
 
       method:"POST",
 
