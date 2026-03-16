@@ -12,7 +12,7 @@ function History(){
 
   useEffect(()=>{
 
-    fetch("http://mini-auction-assessment.onrender.com/auction/history")
+    fetch("https://mini-auction-assessment.onrender.com/auction/history")
       .then(res=>res.json())
       .then(data=>setAuctions(data.auctions));
 
