@@ -47,7 +47,7 @@ def create_auction():
 
 def close_expired_auctions(cursor):
 
-    current_time = datetime.datetime.now()
+    current_time = datetime.datetime.utcnow()
 
     cursor.execute("""
         SELECT id
