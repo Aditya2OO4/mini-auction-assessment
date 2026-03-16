@@ -1,10 +1,11 @@
 import mysql.connector
+import os
 
 def get_connection():
-    conn = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="root",
-        database="auction_db"
+
+    return mysql.connector.connect(
+        host=os.environ.get("MYSQLHOST"),
+        user=os.environ.get("MYSQLUSER"),
+        password=os.environ.get("MYSQLPASSWORD"),
+        database=os.environ.get("MYSQLDATABASE")
     )
-    return conn
