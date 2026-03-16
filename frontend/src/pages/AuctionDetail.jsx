@@ -9,7 +9,7 @@ function AuctionDetail({ user }) {
 
   const fetchAuction = () => {
 
-    fetch(`http://mini-auction-assessment.onrender.com/auction/${id}`)
+    fetch(`https://mini-auction-assessment.onrender.com/auction/${id}`)
       .then(res => res.json())
       .then(data => setAuction(data));
 
