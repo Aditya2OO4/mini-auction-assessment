@@ -27,7 +27,7 @@ function AuctionDetail({ user }) {
 
   const placeBid = async () => {
 
-    const response = await fetch("http://mini-auction-assessment.onrender.com/bid/place",{
+    const response = await fetch("https://mini-auction-assessment.onrender.com/bid/place",{
 
       method:"POST",
 
